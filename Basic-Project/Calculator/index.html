@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Sets the viewport to ensure the page is responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to the external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
+    <!-- Title of the webpage, displayed in the browser tab -->
     <title>Calculator</title>
 </head>
+
 <body>
+    <!-- Main container for the calculator -->
     <div class="container">
+        <!-- Display area for the calculator, type set to text for styling flexibility -->
         <input type="text" class="display">
+        <!-- Container for all calculator buttons -->
         <div class="buttons">
+            <!-- Each button element represents a calculator button with respective values -->
             <button class="operator" data-value="AC">AC</button>
             <button class="operator" data-value="DEL">DEL</button>
             <button class="operator" data-value="%">%</button>
@@ -32,6 +42,8 @@
             <button class="operator" data-value="=">=</button>
         </div>
     </div>
+    <!-- Link to the external JavaScript file for calculator functionality -->
     <script src="script.js"></script>
 </body>
+
 </html>

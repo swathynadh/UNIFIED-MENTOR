@@ -1,59 +1,67 @@
+/* Reset margin and padding for all elements, inherit font-family from parent */
 * {
     margin: 0;
     padding: 0;
     font-family: inherit;
 }
 
+/* Style for the body to center the calculator vertically and horizontally */
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: black; /* Set background color to black */
 }
 
+/* Style for the calculator container */
 .container {
     position: relative;
-    max-width: 300px;
-    width: 100%;
-    border-radius: 12px;
-    padding: 10px 20px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
+    max-width: 300px; /* Maximum width of the container */
+    width: 100%; /* Full width of the parent */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 20px 20px; /* Padding inside the container */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(15px); /* Apply blur effect to the background */
 }
 
+/* Style for the display input field */
 .display {
-    height: 80px;
-    width: 100%;
-    text-align: right;
-    margin-bottom: 10px;
-    outline: none;
-    border: none;
-    font-size: 25px;
-    color: black;
-    text-decoration-color: aqua;
-    pointer-events: none;
+    height: 80px; /* Height of the display */
+    width: 100%; /* Full width of the container */
+    text-align: right; /* Align text to the right */
+    margin-bottom: 10px; /* Space below the display */
+    outline: none; /* Remove outline */
+    border: none; /* Remove border */
+    font-size: 25px; /* Font size */
+    color: black; /* Text color */
+    text-decoration-color: aqua; /* Color of text decoration (not used here) */
+    /* pointer-events: none; */ /* Uncomment to make display non-interactive */
 }
 
+/* Style for the buttons container */
 .buttons {
-    display: grid;
-    grid-gap: 11px;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid; /* Use CSS Grid layout */
+    grid-gap: 11px; /* Space between grid items */
+    grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
 }
 
+/* Style for each button */
 .buttons button {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: white;
+    padding: 10px; /* Padding inside buttons */
+    border-radius: 6px; /* Rounded corners */
+    border: none; /* Remove border */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: white; /* White background color */
 }
 
+/* Style for buttons when they are active (pressed) */
 .buttons button:active {
-    transform: scale(0.99);
+    transform: scale(0.99); /* Slightly reduce size on click for visual feedback */
 }
 
+/* Style for operator buttons */
 .operator {
-    color: #2f9fff;
+    color: #2f9fff; /* Blue color for operator text */
 }
